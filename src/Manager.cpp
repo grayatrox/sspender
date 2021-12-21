@@ -238,7 +238,8 @@ void Manager::suspendUntil(double currentTimeInMinutes, double until)
 
 	vector<string> output;
 
-	rtcWakeSuspend(secondsToSleep, &output);
+	//rtcWakeSuspend(secondsToSleep, &output);
+        pmUtilSuspend(secondsToSleep, &output);
 
 	//todo execute script after resume
 
